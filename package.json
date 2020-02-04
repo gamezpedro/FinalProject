@@ -1,0 +1,31 @@
+{
+  "name": "proyectofinal",
+  "version": "1.0.0",
+  "description": "Proyecto Final de Desarrollo Web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gamezpedro/FinalProject.git"
+  },
+  "author": "Pedro Gamez / Sergio Canto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gamezpedro/FinalProject/issues"
+  },
+  "homepage": "https://github.com/gamezpedro/FinalProject#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "json": "^9.0.6",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.8.11",
+    "morgan": "^1.9.1",
+    "validator": "^12.2.0"
+  }
+}

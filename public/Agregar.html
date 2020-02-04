@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link href="./css/Agregar.css" rel="stylesheet" type="text/css"/>
+    <title>Agregar Estudiante</title>
+</head>
+<body>
+    <nav class="menubar">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="Estudiantes.html">Estudiantes</a></li>
+            <li><a href="Quienes.html">¿Quiénes Somos?</a></li>
+            <li><a href="Grupos.html">Grupos</a></li>
+            <li><a class="right" href="Login.html">Salir</a></li>
+        </ul>
+        <img src="./images/logo.png" alt="logo">
+        <div class="search-box">
+                <input class="search-text" type="text" placeholder="Buscar Estudiante" id="searchStudent">
+                <a class="search-button" id="searchButton" href="Perfil.html">
+                <i class="fas fa-search"></i>
+            </a>
+        </div>
+    </nav>
+    <form id="agregarForm">
+        <div id="datos">
+        <h3 class="center"> Datos del Estudiante </h3>
+        <div>
+            <label class="data" for="nombreAgregar">
+                Nombre(s):
+            </label>
+            <input id="input1" type="text"/>
+        </div>
+        <div>
+            <label class="data" for="apellidoAgregar">
+                Apellidos:
+            </label>
+            <input id="input2" type="text"/>
+        </div>
+        <div>
+            <label class="data" for="carreraAgregar">
+                Carrera:
+            </label>
+            <input id="input3" type="text"/>
+        </div>
+</div>
+<div id="califica">
+        <h3 class="center"> Califica al Estudiante</h3>
+        <div id="flex">
+            <div>
+        <div class="center">
+            Respeto      
+        </div>
+        <div class="rating">
+            
+            <input class="stars" type="radio" name="respetoStar" value=100 id="respetoStar5">
+            <label class="starsLabel" for="respetoStar5">
+                <i class="fas fa-star"></i>
+            </label>
+
+            <input class="stars" type="radio" name="respetoStar" value=80 id="respetoStar4">
+            <label class="starsLabel" for="respetoStar4">
+                <i class="fas fa-star"></i>
+            </label>
+
+            <input class="stars" type="radio" name="respetoStar" value=60 id="respetoStar3">
+            <label class="starsLabel" for="respetoStar3">
+                <i class="fas fa-star"></i>
+            </label>
+
+            <input class="stars" type="radio" name="respetoStar" value=40 id="respetoStar2">
+            <label class="starsLabel" for="respetoStar2">
+                <i class="fas fa-star"></i>
+            </label>
+
+            <input class="stars" type="radio" name="respetoStar" value=20 id="respetoStar1">
+            <label class="starsLabel" for="respetoStar1">
+                <i class="fas fa-star"></i>
+            </label>
+        </div>
+        </div>
+        <div>
+        <div class="center">
+            Participación
+        </div>
+        <div class="rating">
+            
+            <input class="stars" type="radio" name="participacionStar" value=100 id="participacionStar5">
+            <label class="starsLabel" for="participacionStar5">
+                <i class="fas fa-star"></i>
+            </label>
+
+            <input class="stars" type="radio" name="participacionStar" value=80 id="participacionStar4">
+            <label class="starsLabel" for="participacionStar4">
+                <i class="fas fa-star"></i>
+            </label>
+
+            <input class="stars" type="radio" name="participacionStar" value=60 id="participacionStar3">
+            <label class="starsLabel" for="participacionStar3">
+                <i class="fas fa-star"></i>
+            </label>
+
+            <input class="stars" type="radio" name="participacionStar" value=40 id="participacionStar2">
+            <label class="starsLabel" for="participacionStar2">
+                <i class="fas fa-star"></i>
+            </label>
+
+            <input class="stars" type="radio" name="participacionStar" value=20 id="participacionStar1">
+            <label class="starsLabel" for="participacionStar1">
+                <i class="fas fa-star"></i>
+            </label>
+        </div>
+        </div>
+        <div>
+        <div class="center">
+            Asistencia
+        </div>
+        <div class="rating">
+            
+            <input class="stars" type="radio" name="asistenciaStar" value=100 id="asistenciaStar5">
+            <label class="starsLabel" for="asistenciaStar5">
+                <i class="fas fa-star"></i>
+            </label>
+
+            <input class="stars" type="radio" name="asistenciaStar" value=80 id="asistenciaStar4">
+            <label class="starsLabel" for="asistenciaStar4">
+                <i class="fas fa-star"></i>
+            </label>
+
+            <input class="stars" type="radio" name="asistenciaStar" value=60 id="asistenciaStar3">
+            <label class="starsLabel" for="asistenciaStar3">
+                <i class="fas fa-star"></i>
+            </label>
+
+            <input class="stars" type="radio" name="asistenciaStar" value=40 id="asistenciaStar2">
+            <label class="starsLabel" for="asistenciaStar2">
+                <i class="fas fa-star"></i>
+            </label>
+
+            <input class="stars" type="radio" name="asistenciaStar" value=20 id="asistenciaStar1">
+            <label class="starsLabel" for="asistenciaStar1">
+                <i class="fas fa-star"></i>
+            </label>
+        </div>
+        </div>
+        </div>
+        <div id="flex2">
+            <div>
+        <div class="center">
+            Trabajo en equipo
+        </div>
+        <div class="rating">
+            
+            <input class="stars" type="radio" name="trabajoStar" value=100 id="trabajoStar5">
+            <label class="starsLabel" for="trabajoStar5">
+                <i class="fas fa-star"></i>
+            </label>
+
+            <input class="stars" type="radio" name="trabajoStar" value=80 id="trabajoStar4">
+            <label class="starsLabel" for="trabajoStar4">
+                <i class="fas fa-star"></i>
+            </label>
+
+            <input class="stars" type="radio" name="trabajoStar" value=60 id="trabajoStar3">
+            <label class="starsLabel" for="trabajoStar3">
+                <i class="fas fa-star"></i>
+            </label>
+
+            <input class="stars" type="radio" name="trabajoStar" value=40 id="trabajoStar2">
+            <label class="starsLabel" for="trabajoStar2">
+                <i class="fas fa-star"></i>
+            </label>
+
+            <input class="stars" type="radio" name="trabajoStar" value=20 id="trabajoStar1">
+            <label class="starsLabel" for="trabajoStar1">
+                <i class="fas fa-star"></i>
+            </label>
+        </div>
+        </div>
+        <div>
+        <div class="center">
+            Interés
+        </div>
+        <div class="rating">
+            
+            <input class="stars" type="radio" name="interesStar" value=100 id="interesStar5">
+            <label class="starsLabel" for="interesStar5">
+                <i class="fas fa-star"></i>
+            </label>
+
+            <input class="stars" type="radio" name="interesStar" value=80 id="interesStar4">
+            <label class="starsLabel" for="interesStar4">
+                <i class="fas fa-star"></i>
+            </label>
+
+            <input class="stars" type="radio" name="interesStar" value=60 id="interesStar3">
+            <label class="starsLabel" for="interesStar3">
+                <i class="fas fa-star"></i>
+            </label>
+
+            <input class="stars" type="radio" name="interesStar" value=40 id="interesStar2">
+            <label class="starsLabel" for="interesStar2">
+                <i class="fas fa-star"></i>
+            </label>
+
+            <input class="stars" type="radio" name="interesStar" value=20 id="interesStar1">
+            <label class="starsLabel" for="interesStar1">
+                <i class="fas fa-star"></i>
+            </label>
+        </div>
+        </div>
+        </div>
+    </div>
+
+    </form>
+    <div class="center">
+        <textarea id="commentsBox" name="Comentarios" placeholder="Comentarios..."></textarea>
+    </div>
+    <div class="center">
+        <button id="agregarBtn">
+            Agregar
+        </button>
+    </div>
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>     
+    <script src="js/Agregar.js"></script>
+</body>
+</html>

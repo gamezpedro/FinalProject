@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="./css/Register.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <title>Register</title>
+</head>
+<body>
+    <img class="logo" src="./images/logo.png" alt="logo">
+    <div class="sign-up-form">
+        <img class="user" src="./images/user.png">
+        <h1> Regístrate </h1>
+        <form>
+            <input type="text" class="input-box" placeholder="Nombre(s)" id="nombre">
+            <input type="text" class="input-box" placeholder="Apellidos" id="apellido">
+            <input type="email" class="input-box" placeholder="Correo Institucional" id="mail">
+            <input type="password" class="input-box" placeholder="Contraseña" id="password"> 
+            <input type="password" class="input-box" placeholder="Confirma Contraseña" id="passwordConfirm">
+            <p class="terminos"><span><input type="checkbox" id="checkBox"></span>Acepto términos y condiciones</p>
+            <button type="button" class="sign-btn">Registrarse</button>
+            <hr>
+            <p>¿Ya tienes una cuenta? <a href="Login.html">Ingresar</a></p>
+        </form>
+    </div>
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>     
+    <script src="./js/Register.js"></script>
+</body>
+</html>

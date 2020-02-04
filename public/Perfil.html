@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="./css/Perfil.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <title>Perfil de Estudiante</title>
+</head>
+<body>
+    <nav class="menubar">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="Estudiantes.html">Estudiantes</a></li>
+            <li><a href="Quienes.html">¿Quiénes Somos?</a></li>
+            <li><a href="Grupos.html">Grupos</a></li>
+            <li><a class="right" href="Login.html">Salir</a></li>
+        </ul>
+        <img src="./images/logo.png" alt="logo">
+        <div class="search-box">
+                <input class="search-text" type="text" placeholder="Buscar Estudiante" id="searchStudent">
+                <a class="search-button" id="searchButton" href="Perfil.html">
+                <i class="fas fa-search"></i>
+            </a>
+        </div>
+    </nav>
+    <h1 id="nombre"></h1>
+    <h2 id="carrera"></h2>
+
+    <table class="promedios">
+        <thead>
+            <tr>
+                <th id="col1">
+                    Calificación General
+                </th>
+                <th class="col2">
+                    Participación
+                </th>
+                <th class="col2">
+                    Interés
+                </th>
+                <th class="col2">
+                    Trabajo en Equipo
+                </th>
+                <th class="col2">
+                    Respeto
+                </th>
+                <th class="col2">
+                    Asistencia
+                </th>
+            </tr>
+        </thead>
+        <tbody class="results">
+        </tbody>
+    </table>
+
+    <h2 id="comentariosH2">Comentarios</h2>
+    <div id="comentarios">
+    </div>
+    
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>     
+    <script src="js/index.js"></script>
+    <script src="js/Perfil.js"></script>
+</body>
+</html>
