@@ -77,8 +77,16 @@ function fetchStudent(){
     });
 }
 
+function watchForm(){
+    $('#calificar').on('click', function(e){
+    e.preventDefault();
+    windows.location = "Calificar.html";
+    });
+}
+
 function init(){
     fetchStudent();
+    watchForm();
 }
 
 init();

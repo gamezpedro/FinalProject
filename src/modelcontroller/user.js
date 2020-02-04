@@ -3,6 +3,8 @@ let User = require('../models/user')
 //Traer usuarios
 let getUsers = function(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
+  res.header("Access-Control-Allow-Methods", "GET, PUT, POST, DELETE");
+  res.header("Access-Control-Allow-Headers", "Origin, Content-Type, Accept");
   User.find({}).then(function(users) {
     res.send(users)
   }).catch(function(error){
@@ -11,8 +13,10 @@ let getUsers = function(req, res) {
 }
 
 //Traer un solo usuario
-let getUser = function(req, res) {
+let getUser = function (req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
+  res.header("Access-Control-Allow-Methods", "GET, PUT, POST, DELETE");
+  res.header("Access-Control-Allow-Headers", "Origin, Content-Type, Accept");
   let _id = req.params.id
   User.findById(_id).then(function(user) {
     if(!user){
@@ -27,6 +31,8 @@ let getUser = function(req, res) {
 //Crear un usuario
 let createUser = function(req, res){
   res.setHeader('Access-Control-Allow-Origin', '*');
+  res.header("Access-Control-Allow-Methods", "GET, PUT, POST, DELETE");
+  res.header("Access-Control-Allow-Headers", "Origin, Content-Type, Accept");
   let user = new User(req.body)
   user.save().then(function() {
     return res.send(user)
@@ -38,6 +44,8 @@ let createUser = function(req, res){
 //Login usuario
 let login = function(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
+  res.header("Access-Control-Allow-Methods", "GET, PUT, POST, DELETE");
+  res.header("Access-Control-Allow-Headers", "Origin, Content-Type, Accept");
   User.findByCredentials(req.body.email, req.body.password).then(function(user){
     user.generateToken().then(function(token){
       return res.send({user, token})
@@ -52,6 +60,8 @@ let login = function(req, res) {
 //Logout usuario
 let logout = function(req, res){
   res.setHeader('Access-Control-Allow-Origin', '*');
+  res.header("Access-Control-Allow-Methods", "GET, PUT, POST, DELETE");
+  res.header("Access-Control-Allow-Headers", "Origin, Content-Type, Accept");
   req.user.tokens = req.user.tokens.filter(function(token){
     return token.token != req.token
   })
@@ -65,6 +75,8 @@ let logout = function(req, res){
 //Actualizar info de usuario
 let updateUser = function(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
+  res.header("Access-Control-Allow-Methods", "GET, PUT, POST, DELETE");
+  res.header("Access-Control-Allow-Headers", "Origin, Content-Type, Accept");
   let _id = req.params.id
   let updates = Object.keys(req.body)
   let allowedUpdates = ['name', 'lastname', 'email', 'password', 'userType']

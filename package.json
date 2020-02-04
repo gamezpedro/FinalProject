@@ -1,6 +1,9 @@
 {
   "name": "proyectofinal",
   "version": "1.0.0",
+  "engines": {
+    "node": "v12.14.1"
+  },
   "description": "Proyecto Final de Desarrollo Web",
   "main": "index.js",
   "scripts": {

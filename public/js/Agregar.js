@@ -22,16 +22,17 @@ function agregarEstudiante(){
     }
     
     $.ajax({
-        url:url, //url/endpointToAPI,
-        type: "POST", 
-        data: JSON.stringify(estudianteNuevo),
-        //crossDomain:true,
-        headers:{
-			'Content-Type':'application/json',
-		},
+        method: "POST", 
+        url:(url), //url/endpointToAPI
+        contentType:"application/json",
+        dataType: "json",
+        data: JSON.stringify({estudianteNuevo}),
         success : function(result){
             console.log("Funcionó el post")
-        }
+        },
+        error: function(e){
+            console.log(e);
+        },
     }); 
 }
 
