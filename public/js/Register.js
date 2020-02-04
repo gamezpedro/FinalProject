@@ -1,4 +1,5 @@
-let url = 'http://localhost:8080/users'
+//let url = 'http://localhost:8080/users'
+let url = "https://boiling-castle-22640.herokuapp.com/users"
 
 function createUser(user){
 

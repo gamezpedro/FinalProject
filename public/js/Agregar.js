@@ -1,5 +1,5 @@
-let url = "http://localhost:8080/estudiantes"
-
+//let url = "http://localhost:8080/estudiantes"
+let url = "https://boiling-castle-22640.herokuapp.com/estudiantes"
 function agregarEstudiante(){
     let nombre = $('#input1').val()+(" ")+$('#input2').val();
     let carrera = $('#input3').val();

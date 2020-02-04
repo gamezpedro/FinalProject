@@ -1,7 +1,7 @@
+//let url = "http://localhost:8080/";
+let url = "https://boiling-castle-22640.herokuapp.com/"
 let results = $('.results');
 let promedio;
-
-
 
 function displayResults(responseJSON){
     console.log("Estamos dentro del Display Results");
@@ -36,7 +36,6 @@ function sendNombre(student){
 }
 
 function fetchStudent(){
-    let url = "http://localhost:8080/";
 
     $.ajax({
       url : (url + 'consultar/estudiantes'),

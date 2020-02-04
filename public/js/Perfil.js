@@ -1,3 +1,8 @@
+
+//let url = "http://localhost:8080/";
+let url = "https://boiling-castle-22640.herokuapp.com/";
+
+
 var searchedStudent = sessionStorage.getItem("searchedStudent");
 console.log("estamos en el perfil este es el estudiante buscado:");
 console.log(searchedStudent);
@@ -58,7 +63,6 @@ function displayResults(responseJSON){
     //location.replace("Perfil.html");
 
 function fetchStudent(){
-    let url = "http://localhost:8080/";
 
     $.ajax({
       url : (url + 'consultar/estudiantes'),
