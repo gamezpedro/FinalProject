@@ -3,8 +3,8 @@ let mongoose = require('mongoose');
 let bodyParser = require( "body-parser" );
 let morgan = require('morgan');
 //let jsonParser = bodyParser.json();
-let {DATABASE_URL, PORT} = require('./src/config');
-let router = require('./src/routes');
+let {DATABASE_URL, PORT} = require('./config');
+let router = require('./routes');
 
 let app = express();
 let cors = require('cors');
