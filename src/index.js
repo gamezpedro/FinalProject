@@ -2,12 +2,12 @@ let express = require('express');
 let mongoose = require('mongoose');
 let bodyParser = require( "body-parser" );
 let morgan = require('morgan');
+let cors = require('cors');
 //let jsonParser = bodyParser.json();
 let {DATABASE_URL, PORT} = require('./config');
 let router = require('./routes');
 
 let app = express();
-let cors = require('cors');
 
 app.use(express.json()); //Parsea a json
 app.use(router);
@@ -18,6 +18,7 @@ app.use( morgan( 'dev' ) );
 
 
 //Es para habilitar los CORs y permitir que otras personas accedan al servidor
+
 app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Methods", "GET, PUT, POST, DELETE");
@@ -25,6 +26,9 @@ app.use(function(req, res, next) {
     next();
 });
 
+app.get('/', function (req,res){
+	res.redirect('../public/index.html');
+})
 
 let server;
 

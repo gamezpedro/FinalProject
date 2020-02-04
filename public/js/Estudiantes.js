@@ -1,5 +1,5 @@
-//let url = "http://localhost:8080/";
-let url = "https://boiling-castle-22640.herokuapp.com/"
+let url = "http://localhost:8080/";
+//let url = "https://boiling-castle-22640.herokuapp.com/"
 let results = $('.results');
 let promedio;
 

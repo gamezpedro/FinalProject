@@ -1,6 +1,6 @@
 
-//let url = "http://localhost:8080/";
-let url = "https://boiling-castle-22640.herokuapp.com/";
+let url = "http://localhost:8080/";
+//let url = "https://boiling-castle-22640.herokuapp.com/";
 
 
 var searchedStudent = sessionStorage.getItem("searchedStudent");
