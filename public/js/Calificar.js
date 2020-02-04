@@ -46,20 +46,20 @@ function updateValues(responseJSON){
             let trabajo = ((responseJSON[i].trabajoenequipo * size)+trabajoValue)/(size+1);
             let comments = (responseJSON[i].commentList.push(comment));
             id = responseJSON[i].id;
+            
+            let estudianteActualizado = {
+                name,
+                career,
+                participacion,
+                interes,
+                trabajo,
+                respeto,
+                asistencia,
+                comments
+            }
+            updateStudents(estudianteActualizado, id);
         }
     }
-    
-    estudianteActualizado = {
-        name,
-        career,
-        participacion,
-        interes,
-        trabajo,
-        respeto,
-        asistencia,
-        comments
-    }
-    updateStudents(estudianteActualizado, id);
 }
 
 function getStudent(){
